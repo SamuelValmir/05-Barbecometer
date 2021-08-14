@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Build in 12/08/2021 - 14/08/2021 by Samuel Valmir -->
+
+<!-- *Rules: -->
+<!-- Beef - 0.4 Kg/people.    More than 6 hours, then it'll be 0.65 Kg -->
+<!-- Bear - 1.2 L/people.     More than 6 hours, then it'll be 2 L-->
+<!-- Soda/water - 1 L/people. More than 6 hours, then it'll be 1.5 L-->
+<!-- Children are half of adult -->
+
+<!-- *I learned about-->
+<!-- simple @keyframes with css, quite simple animations with css, marquee tag -->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="icon" href="./assets/Icons/logo.png" type="image/png">
+    <script src="./scripts/script.js"></script>
+    <title>Barbecometer</title>
+</head>
+
+<body>
+    <section>
+        <marquee loop="2">Calculate the amount of food needed according to the number of people. Try it!</marquee>
+        <div id="container">
+            <h1 id="title">Barbecometer</h1>
+            <div id="form">
+                <input class="form-element" type="number" id="adult" placeholder="Adult"> <br>
+                <input class="form-element" type="number" id="children" placeholder="Children"> <br>
+                <input class="form-element" type="number" id="duration" placeholder="Duration (min)"> <br>
+                <button class="form-element btn" id="calculate" onclick="calculate()"> <img
+                        src="./assets/Icons/grill-icon.png" alt="grill"> CALCULATE</button> <br>
+                <div id="result">
+                    <!-- Will be filled by Java Script-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="footer-container">
+            <div id="footer-top">
+
+                <div class="main-footer" id="logo-container">
+                    <div id="logo-img">
+                        <img src="./assets/icons/logo.png" alt="Logo" title="Logo" width="100px">
+                    </div>
+
+                    <div id="logo-description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam quidem rem cupiditate magnam.
+                        Vero, facere! Modi non minus voluptatum eligendi, inventore obcaecati placeat id architecto qui
+                        excepturi soluta quis rem.
+                    </div>
+                </div>
+
+
+                <div class="main-footer" id="professional-container">
+                    <ul>
+                        <li>
+                            <h3>Professional:</h3>
+                        </li>
+                        <a href="https://github.com/SamuelValmir">
+                            <li>Github</li>
+                        </a>
+                        <a href="https://www.linkedin.com/in/samuel-valmir-8a92bb218/">
+                            <li>LinkedIn</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="main-footer" id="personal-container">
+                    <ul>
+                        <li>
+                            <h3>Personal:</h3>
+                        </li>
+                        <a
+                            href="https://api.whatsapp.com/send?phone=5588988224372&text=Ol%C3%A1,%20vim%20pelo%20site%20do%20churrasc%C3%B4metro!">
+                            <li>WhatsApp</li>
+                        </a>
+                        <a href="https://www.instagram.com/ryuzaki_xl/">
+                            <li>Instagram</li>
+                        </a>
+                    </ul>
+                </div>
+            </div>
+
+            <div id="footer-bottom">
+                2021 Samuel V.S.T - Developer <a href=""></a>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
